@@ -23,13 +23,13 @@ const GoalForm = () => {
           </Form.Group>
           <Form.Group controlId="formResults">
             <Form.Label>Result</Form.Label>
-            <Form.Control type="text" placeholder="Enter result" />
+            <Form.Control as="textarea" placeholder="Enter result" />
             <Form.Text className="text-muted">
               What is the result to measure this goal?
             </Form.Text>
           </Form.Group>
           <Button variant="primary" type="submit">
-            Add
+            Add Goal
           </Button>
         </Form>
       </Card.Body>
