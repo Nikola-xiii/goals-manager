@@ -1,6 +1,11 @@
 import GoalForm from "../goal-form/goal-form";
 import React from "react";
-import {createGoalForm, initGoalForm, removeGoalForm, updateGoalForm} from "../../../store/actions";
+import {
+  createGoalForm,
+  initGoalForm,
+  removeGoalForm,
+  updateGoalForm
+} from "../../../store/actions";
 import {Goal} from "../../../store/models/goal.model";
 import {connect} from "react-redux";
 
