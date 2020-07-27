@@ -73,7 +73,10 @@ class GoalForm extends React.Component<propsType, Goal> {
                 What is the result to measure this goal?
               </Form.Text>
             </Form.Group>
-            <Button variant="primary" type="button" onClick={(event) => this.props.createGoal(this.state)}>
+            <Button variant="primary"
+                    type="button"
+                    onClick={(event) => this.props.createGoal(this.state)}
+            >
               Add Goal
             </Button>
           </Form>

@@ -1,16 +1,16 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
 import React from 'react';
-import App from "../App";
 import NewGoal from "../features/goal/new-goal/new-goal";
+import GoalList from "../features/goal/goal-list/goal-list";
 
 export const Routes = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/List" component={App}/>
-        <Route exact path="/Goal" component={NewGoal}/>
+        <Route exact path="/goal" component={NewGoal}/>
+        <Route exact path="/goal/list" component={GoalList}/>
         <Route exact path="/">
-          <Redirect to="/List"/>
+          <Redirect to="/goal"/>
         </Route>
       </Switch>
     </div>

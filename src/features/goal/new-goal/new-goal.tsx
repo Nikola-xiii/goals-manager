@@ -1,5 +1,4 @@
 import GoalForm from "../goal-form/goal-form";
-import React from "react";
 import {
   createGoalForm,
   initGoalForm,
