@@ -1,13 +1,13 @@
-import {Card} from "react-bootstrap";
+import {Button, Card} from "react-bootstrap";
 import * as React from "react";
-import './goal-list-item.scss';
-import {Goal} from "../../../store/models/goal.model";
+import './goal-single-item.scss';
+import {Goal} from "../../../../store/models/goal.model";
 
 interface Props {
   goal: Goal
 }
 
-const GoalListItem = (props: Props) => {
+const GoalSingleItem = (props: Props) => {
   return (
     <Card>
       <Card.Header>
@@ -17,9 +17,10 @@ const GoalListItem = (props: Props) => {
       <Card.Body>
         <p><strong>Key</strong>: {props.goal.key}</p>
         <p><strong>Results</strong>: {props.goal.results}</p>
+        <Button>Add Task</Button>
       </Card.Body>
     </Card>
   )
 }
 
-export default GoalListItem;
+export default GoalSingleItem;

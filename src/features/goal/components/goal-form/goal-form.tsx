@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Card, Form} from "react-bootstrap";
-import {Goal} from "../../../store/models/goal.model";
+import {Goal} from "../../../../store/models/goal.model";
 
 interface Props {
   form: { goalForm: Goal },

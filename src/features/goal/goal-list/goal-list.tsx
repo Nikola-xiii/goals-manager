@@ -1,5 +1,5 @@
 import React from 'react';
-import GoalListItem from "../goal-list-item/goal-list-item";
+import GoalListItem from "../components/goal-list-item/goal-list-item";
 import {Goal} from "../../../store/models/goal.model";
 import {connect} from "react-redux";
 import {getGoalList} from "../../../store/actions";
