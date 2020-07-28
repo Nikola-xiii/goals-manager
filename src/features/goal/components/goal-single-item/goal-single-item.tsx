@@ -17,8 +17,10 @@ const GoalSingleItem = (props: Props) => {
       <Card.Body>
         <p><strong>Key</strong>: {props.goal.key}</p>
         <p><strong>Results</strong>: {props.goal.results}</p>
-        <Button>Add Task</Button>
       </Card.Body>
+      <Card.Footer>
+        <Button>Add Task</Button>
+      </Card.Footer>
     </Card>
   )
 }
