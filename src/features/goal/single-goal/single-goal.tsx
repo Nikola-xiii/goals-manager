@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import React from "react";
 
 const mapStateToProps = (state: any) => ({
-  goal: state.data
+  goal: state.goals.data
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
