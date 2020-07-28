@@ -7,10 +7,10 @@ export const Routes = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/goal" component={NewGoal}/>
+        <Route exact path="/goal/add" component={NewGoal}/>
         <Route exact path="/goal/list" component={GoalList}/>
         <Route exact path="/">
-          <Redirect to="/goal"/>
+          <Redirect to="/goal/list"/>
         </Route>
       </Switch>
     </div>

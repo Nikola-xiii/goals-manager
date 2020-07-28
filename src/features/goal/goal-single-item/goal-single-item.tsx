@@ -3,7 +3,11 @@ import * as React from "react";
 import './goal-single-item.scss';
 import {Goal} from "../../../store/models/goal.model";
 
-const GoalSingleItem = (props: { goal: Goal }) => {
+interface Props {
+  goal: Goal
+}
+
+const GoalSingleItem = (props: Props) => {
   return (
     <Card>
       <Card.Header>

@@ -3,7 +3,11 @@ import * as React from "react";
 import './goal-list-item.scss';
 import {Goal} from "../../../store/models/goal.model";
 
-const GoalListItem = (props: { goal: Goal }) => {
+interface Props {
+  goal: Goal
+}
+
+const GoalListItem = (props: Props) => {
   return (
     <Card>
       <Card.Header>
