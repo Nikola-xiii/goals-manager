@@ -1,6 +1,7 @@
-import {CREATE_GOAL, GOAL_LIST, INIT_GOAL_FORM} from "./actions";
+import {CREATE_GOAL, GOAL_ITEM, GOAL_LIST, INIT_GOAL_FORM} from "./actions";
 import {combineReducers} from "redux";
 import {Goal} from "./models/goal.model";
+import {Goals} from "../data/goals";
 
 const initialGoalState = {
   goalForm: {
@@ -29,13 +30,19 @@ function goalReducer(state = initialGoalState, action: { type: string; form: Goa
   }
 }
 
-function goalListReducer(state: Goal[] = [], action: { type: string; goals: Goal[]}) {
+function goalListReducer(state: Goal[] = [], action: { type: string; goals?: Goal[]; id?: string}) {
   switch (action.type) {
     case GOAL_LIST:
       return {
         ...state,
         status: GOAL_LIST,
         data: action.goals,
+      };
+    case GOAL_ITEM:
+      return {
+        ...state,
+        status: GOAL_ITEM,
+        data: Goals.find(item => item.id === action.id),
       };
     default:
       return state;

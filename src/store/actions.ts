@@ -5,6 +5,7 @@ export const CREATE_GOAL = 'CREATE_GOAL';
 export const UPDATE_GOAL = 'UPDATE_GOAL';
 export const REMOVE_GOAL = 'REMOVE_GOAL';
 export const GOAL_LIST = 'GOAL_LIST';
+export const GOAL_ITEM = 'GOAL_ITEM';
 
 export const initGoalForm = (form: Goal) => ({
   type: INIT_GOAL_FORM,
@@ -29,4 +30,9 @@ export const removeGoalForm = (form: Goal) => ({
 export const getGoalList = (goals: Goal[]) => ({
   type: GOAL_LIST,
   goals
+});
+
+export const getGoalItem = (id: string) => ({
+  type: GOAL_ITEM,
+  id
 });
