@@ -11,7 +11,6 @@ export const initGoalForm = (form: Goal) => ({
   form
 });
 
-
 export const createGoalForm = (form: Goal) => ({
   type: CREATE_GOAL,
   form
