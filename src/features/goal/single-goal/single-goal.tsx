@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch: any) => ({
 
 class SingleGoal extends React.Component<any, any> {
   componentDidMount() {
-    this.props.getGoalItem('1');
+    this.props.getGoalItem(this.props.match.params.id);
   }
 
   render() {
