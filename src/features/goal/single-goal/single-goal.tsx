@@ -17,7 +17,6 @@ class SingleGoal extends React.Component<any, any> {
   }
 
   render() {
-    console.log(this.props);
     return (this.props.goal ? <GoalSingleItem goal={this.props.goal}/> : <div>Goal not found</div>)
   }
 }
