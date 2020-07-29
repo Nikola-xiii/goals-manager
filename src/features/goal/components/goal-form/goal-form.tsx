@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button, Card, Form} from "react-bootstrap";
-import {Goal} from "../../../store/models/goal.model";
+import {Goal} from "../../../../store/models/goal.model";
 
-interface propsType {
+interface Props {
   form: { goalForm: Goal },
   initGoal: (form: Goal) => {},
   updateGoal: (form: Goal) => {},
@@ -10,8 +10,8 @@ interface propsType {
   deleteGoal: (form: Goal) => {},
 }
 
-class GoalForm extends React.Component<propsType, Goal> {
-  constructor(props: propsType) {
+class GoalForm extends React.Component<Props, Goal> {
+  constructor(props: Props) {
     super(props);
     this.state = props.form.goalForm;
   }
