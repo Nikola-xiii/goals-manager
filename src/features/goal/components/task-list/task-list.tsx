@@ -12,8 +12,8 @@ const TaskList = (props: Props) => {
     <ListGroup>
       {props.tasks.map(task => (
         <ListGroup.Item>
-          <input className="task-checkbox" type="checkbox" />
-          <span className="task-value">{task.value}</span>
+          <input className="task-checkbox" type="checkbox" checked={task.done} />
+          <span className={task.done ? 'task-value-done' : 'task-value'}>{task.value}</span>
         </ListGroup.Item>)
       )}
     </ListGroup>
